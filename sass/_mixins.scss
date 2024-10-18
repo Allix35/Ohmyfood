@@ -1,0 +1,4 @@
+@mixin linear-gradient($angle, $color1, $percent1, $color2, $percent2) {
+    background: linear-gradient($angle, $color1 $percent1, $color2, $percent2);
+}
+
