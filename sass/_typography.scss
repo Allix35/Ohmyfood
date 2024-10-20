@@ -1,0 +1,65 @@
+ //* Général *//
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+a, button {
+    cursor: pointer;
+    border: none;
+}
+
+ul{
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: $deeperblack;
+    font-style: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;     
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    line-height: 21.09px;
+}
+
+h2 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: -12px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: 20px;
+}

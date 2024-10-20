@@ -1,8 +1,3 @@
-//* Général *//
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
 
 //* Colors *//
 
@@ -14,34 +9,15 @@ $tertiary-color: #99E2D0;
 
 $white: #FFFF;
 $black: #353535;
+$deeperblack :#000000;
 $gray: #7E7E7E;
 $gray-medium: #EAEAEA;
 $gray-light: #F6F6F6;
-$linear-gradient: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
+$linear-gradient: linear-gradient(193.33deg, $primary-color, -11.44%, $secondary-color, 123.93%);
 
-body {
-    margin: 0px;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
-a, button {
-    cursor: pointer;
-}
 
-button {
-    border: none;
-    background: none;
-    padding: 0;
-}
-
-::placeholder {
-    color: $black;
-    font-style: bold;
-}
 
 
 

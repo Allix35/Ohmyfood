@@ -1,0 +1,18 @@
+.footer {
+    background: $black;
+    color: $white;
+        &__title {
+            font-family: 'Shrikhand', cursive;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-top : 0px;
+                &--link {
+                    font-family: 'Roboto', sans-serif;
+
+        }
+    }
+}
+
+.footer__icon{
+    color: white;
+}
