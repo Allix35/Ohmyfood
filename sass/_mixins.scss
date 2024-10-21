@@ -3,39 +3,83 @@
 }
 
 
-@mixin button-style($bg-color, $text-color) {
-    background-color: $bg-color;
-    color: $text-color;
-    font-weight: 500;
-    font-size: 16px;
-    border: solid 2px transparent;
+@mixin homepage-article-style {
+    background-color: $gray-light; 
+    width: 97%;
+    height: auto;
+    padding: 5px 15px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px #00000026; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    font-weight : 500;
+    width: 60%; 
+    height: 80px;
+    margin: 10px 0;
+    padding-right: 115px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    cursor: default;
 }
 
-@mixin button-hover-shadow($shadow-color: rgba(0, 0, 0, 0.2), $hover-shadow-color: rgba(0, 0, 0, 0.4)) {
+@mixin icon-hover($hover-bg-color, $hover-color) {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-color;
+    }
+}
+
+@mixin homepage-article-hover-shadow($shadow-color: rgba(0, 0, 0, 0.2), $hover-shadow-color: rgba(0, 0, 0, 0.4)) {
     box-shadow: 0 4px 6px $shadow-color;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
   
     &:hover {
       box-shadow: 0 6px 8px $hover-shadow-color;
     }
-  }
-  
+}
+
+@mixin badge-span-style($background-color, $color, $border-radius, $font-weight, $padding) {
+    background-color: $background-color;
+    color: $color;
+    border-radius: $border-radius;
+    font-weight: $font-weight;
+    padding: $padding;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @mixin image-style($width: 100%, $height: auto, $object-fit: cover) {
     width: $width;
     height: $height;
     object-fit: $object-fit;
-  }
+}
 
-
+@mixin new-span-style($bg-color, $text-color) {
+    display: flex;                       
+    justify-content: center;            
+    align-items: center;                
+    background-color: $bg-color;   
+    color: $text-color;
+    width: 80px;                        
+    height: 30px;                       
+    font-weight: bold;  
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    border-radius: 5px;
+}
+ 
   //* Menu la palette du goût *//
 
   @mixin article-style {
     background-color: #ffffff; 
     width: 97%;
-    height: auto;
+    height: 70px;
     padding: 5px 15px;
     border-radius: 20px;
 
@@ -44,6 +88,7 @@
         justify-content: space-between; 
         align-items: center; 
     }
+
     h3, p {
         margin: 0; 
         padding: 0;
@@ -52,6 +97,7 @@
     }
 
     h3 {
+        padding-top: 10px;
         font-weight:500;
     }
   

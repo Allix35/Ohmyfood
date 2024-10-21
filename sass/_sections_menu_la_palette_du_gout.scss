@@ -32,7 +32,8 @@
 .menu__item {
     margin-top: 20px;
     @include article-style;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
+    margin-left: -10px;
 }
 
 .order-container {

@@ -30,8 +30,9 @@
     padding: 15px;
     padding-left: 10px;
     color: $black;
+    font-size: 16px;
     border: none;
-    font-weight: bold;
+    font-weight: 500;
     background-color: $gray-medium;
     outline: 0;
 } 
@@ -77,7 +78,7 @@
     align-items: center;  
     border-radius: 25px; 
     @include linear-gradient(193.33deg, $primary-color, -5%, $secondary-color, 95%);
-    @include button-hover-shadow(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); 
+    @include homepage-article-hover-shadow(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); 
     box-shadow: 0px 4px 10px 0px #00000040;
     color: $white; 
     font-size: 15px;
@@ -97,39 +98,31 @@
     gap: 20px;
 
     .btn__functioning {
-        @include button-style($gray-light, $deeperblack);
-        @include button-hover-shadow(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); 
-        width: 85%; 
-        height: 70px;
-        margin: 10px 0;
-        padding-right: 115px;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        cursor: default;
-            &:hover {
-                background-color: lighten($gray-light, 10%); 
-                color: $black; 
-        }
+        @include homepage-article-style;
+        @include homepage-article-hover-shadow(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3),);
+    }
+    
+    p {
+        font-weight: 500;
+        padding-left : 5px;
 
-                &--fa-store {
-                    color: $primary-color;            
-        }
-    }  
-}
+     }
+        
+     &:hover {
+        background-color: lighten($gray-light, 10%); 
+        color: $black; 
+    }
+                      
+    }
+
 
 .badge {
-    display: flex;                       
-    justify-content: center;            
-    align-items: center;                
-    background-color: $primary-color;   
-    color: $white;                      
-    border-radius: 50%;                 
-    width: 30px;                        
-    height: 30px;                       
-    font-weight: bold;                  
-    position: absolute;                 
-    top: 19px;                         
-    left: -15px;                                    
+    @include badge-span-style($primary-color, $white, 50%, bold, 10px);
+    width: 10px; 
+    height: 10px; 
+    position: absolute;
+    top: 30px;
+    left: -15px;
 }
 
 
@@ -159,35 +152,35 @@ i {
             height:230px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;    
-    }
+        }
+        .card__heart {
+            position: absolute;
+            bottom: 30px;
+            right: 15px;
+            font-size: 24px;
+            color: $gray; 
+            cursor: pointer;
+            transition: color 0.3s ease;      
+        }
+        .card__text {
+            padding-bottom: 1px; 
+            padding-left: 15px; 
+            margin-top : 0px;
+        }       
 }
 
-.card__heart {
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
-    font-size: 24px;
-    color: $gray; 
-    cursor: pointer;
-    transition: color 0.3s ease;      
+.card-place {
+    padding-left:0px;
+    margin-top: -15px;
 }
+
+
+
 
 .new {
-    display: flex;                       
-    justify-content: center;            
-    align-items: center;                
-    background-color: $tertiary-color;   
-    color: #008766;
-    width: 80px;                        
-    height: 30px;                       
-    font-weight: bold;  
-    position: absolute;
-    top: 10px;
-    right: 25px;                  
+ @include new-span-style($tertiary-color, #008766);
 }
 
-.card__text{
-    padding-bottom: 1px;
-}
+
 
 
