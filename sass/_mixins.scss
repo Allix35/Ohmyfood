@@ -1,3 +1,21 @@
+
+
+@mixin header-icon-style {
+    .header {
+        position: relative;
+
+        &__icon-arrow {
+            position: absolute;
+            left: 25px; 
+            top: 25px;
+            color: $black; 
+            font-size: 20px; 
+        }
+    }
+}
+
+
+
 @mixin linear-gradient($angle, $color1, $percent1, $color2, $percent2) {
     background: linear-gradient($angle, $color1 $percent1, $color2 $percent2);
 }
@@ -63,7 +81,7 @@
     display: flex;                       
     justify-content: center;            
     align-items: center;                
-    background-color: $bg-color;   
+    background-color: #008766;   
     color: $text-color;
     width: 80px;                        
     height: 30px;                       
