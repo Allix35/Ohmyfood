@@ -213,13 +213,24 @@ p {
 .btn .btn__functioning:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
-.btn p {
-  font-weight: 500;
-  padding-left: 5px;
-}
-.btn:hover {
+.btn .btn__functioning:hover {
   background-color: white;
   color: #353535;
+}
+.btn .btn__functioning:hover .btn__iconebtn {
+  color: #9356DC;
+  background-color: white;
+}
+.btn .btn__functioning .btn__iconebtn {
+  color: #7E7E7E;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.btn .btn__functioning .btn__iconebtn:hover {
+  color: #9356DC;
+}
+.btn .btn__functioning p {
+  font-weight: 500;
+  padding-left: 5px;
 }
 
 .badge {
@@ -291,7 +302,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #008766;
+  background-color: #99E2D0;
   color: #008766;
   width: 80px;
   height: 30px;
